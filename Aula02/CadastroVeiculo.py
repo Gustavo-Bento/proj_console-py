@@ -15,8 +15,7 @@ x = 0
 def clear(): os.system('clear')
 
 def tela():
-    clear()
-    print("-------------------------------------")
+    print("\n-------------------------------------")
     print("---------CADASTRO DE VEICULO---------")
     print("-------------------------------------\n")
 
@@ -43,6 +42,7 @@ while (res == 1):
     cadPlaca = input("Digite a placa do veículo: ")
 
     cadastro.append(veiculo(cadMarca, cadModelo, cadAno, cadPlaca))
+    clear()
     tela()
     x += 1
     res = int(input("\nDeseja cadastrar um novo veículo? Sim(1) / Não(0): "))
