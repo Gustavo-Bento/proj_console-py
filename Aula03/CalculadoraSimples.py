@@ -28,7 +28,7 @@ def calc():
 while(x==0):
     clear()
     calc()
-    res = int(input("\nSelecione o numero da operação que realizar: "))
+    vai = int(input("\nSelecione o numero da operação que realizar: "))
 
     class calculo:  
         
@@ -36,24 +36,28 @@ while(x==0):
             default = "Valor não encontrado"
             return getattr(self, 'case_'+str(operacao), lambda:default)()
         def case_1(self):
+            print("\n",vai," - A sua opção foi adição!")
             v1 = int(input("\nDigite o valor 1: "))
             v2 = int(input("Digite o valor 2: "))
             return v1+v2
         def case_2(self):
+            print("\n",vai," - A sua opção foi subtração!")
             v1 = int(input("\nDigite o valor 1: "))
             v2 = int(input("Digite o valor 2: "))
             return v1-v2
         def case_3(self):
+            print("\n",vai," - A sua opção foi multiplicação!")
             v1 = int(input("\nDigite o valor 1: "))
             v2 = int(input("Digite o valor 2: "))
             return v1*v2
         def case_4(self):
+            print("\n",vai," - A sua opção foi divisão!")
             v1 = int(input("\nDigite o valor 1: "))
             v2 = int(input("Digite o valor 2: "))
             return v1/v2
     
     s = calculo()
-    print("\nO valor resultante é: ",s.switch(res))
+    print("\nO valor resultante é: ",s.switch(vai))
     x=int(input("\nDeseja realizar outra operação? Sim (0) ou Não (1): "))
 clear()
     
