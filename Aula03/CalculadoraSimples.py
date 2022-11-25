@@ -18,14 +18,17 @@ calculadora.append(operador(3,"x","Multiplicação"))
 calculadora.append(operador(4,"÷","Divisão"))
 
 def calc():
+    print("-------------------------")
     print("|{:<3}|{:<3}|{:<15}|".format("Nº","Op","Informação"))
-    print("|---+---+---------------|")
+    print("|===+===+===============|")
     for v in calculadora:
         print("|{:<3}|{:<3}|{:<15}|".format(v.opcao,v.operador,v.info))
+    print("-------------------------")
 
 while(x==0):
+    clear()
     calc()
-    res = int(input("\nSelecione o numero da operação que realizar ou 0 para sair: "))
+    res = int(input("\nSelecione o numero da operação que realizar: "))
 
     class calculo:  
         
@@ -50,7 +53,10 @@ while(x==0):
             return v1/v2
     
     s = calculo()
-    print("\n",s.switch(res))
+    print("\nO valor resultante é: ",s.switch(res))
+    x=int(input("\nDeseja realizar outra operação? Sim (0) ou Não (1): "))
+clear()
+    
 
     
 
