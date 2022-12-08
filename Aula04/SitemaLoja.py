@@ -52,4 +52,4 @@ while(x==0):
     tabela()
     opcao = int(input("\nDigite o código do produto: "))
     print("\nO total da compra é: R$",s.switch(opcao),",00")
-    x=int(input("Deseja realizar outra compra? Sim (0) ou Não (0): "))
+    x=int(input("Deseja realizar outra compra? Sim (0) ou Não (1): "))
