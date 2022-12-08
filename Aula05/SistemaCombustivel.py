@@ -25,6 +25,9 @@ class abastecer:
     
     def case_1(self):
         etanol(opcao)
+    
+    def case_2(self):
+        gasolina(opcao)
 
 posto=[]
 x=0
