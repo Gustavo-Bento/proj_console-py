@@ -28,6 +28,9 @@ class abastecer:
     
     def case_2(self):
         gasolina(opcao)
+    
+    def case_3(self):
+        aditivada(opcao)
 
 posto=[]
 x=0
