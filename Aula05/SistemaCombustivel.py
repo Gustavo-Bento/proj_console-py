@@ -5,12 +5,12 @@ def clear():
     os.system('clear')
 
 def tabela():
-    print("---------------------------")
-    print("|{:<3}|{:<12}|{:<7}|".format("Cod","Combustivel","Valor"))
-    print("===========================")
+    print("----------------------------")
+    print("|{:<4}|{:<13}|{:<7}|".format("Cod","Combustivel","Valor"))
+    print("============================")
     for v in posto:
-        print("|{:<3}|{:<12}|{:<7}|".format(v.cod,v.combustivel,v.valor))
-    print("---------------------------")
+        print("|{:<4}|{:<13}|{:<7}|".format(v.cod,v.combustivel,v.valor))
+    print("----------------------------")
 
 class combustivel:
     def __init__(self,cod,combustivel,valor):
