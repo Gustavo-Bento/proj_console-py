@@ -35,6 +35,9 @@ class abastecer:
     def case_4(self):
         s500(opcao)
 
+    def case_5(self):
+        s10(opcao)
+
 posto=[]
 x=0
 
