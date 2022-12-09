@@ -36,3 +36,16 @@ def aditivada(opcao):
         litros=int(input("\nDigite o total em litros: "))
         total = float(litros*4.90)
         return print("O valor total em reais de ",litros,"litros é de R$",total,".")
+
+def s500(opcao):
+    print("\nCódigo selecionado: ",opcao)
+    print("Produto selecionado: Diesel S-500")
+    pagamento = int(input("\nDigite (1) para o total em reais\nDigite (2) para total em litros:\n"))
+    if(pagamento==1):
+        valor=int(input("\nDigite o total em reais: "))
+        total =float(valor/6.59)
+        return print("O valor total em litros de R$",valor," é de ",total," litros.")
+    else:
+        litros=int(input("\nDigite o total em litros: "))
+        total = float(litros*6.59)
+        return print("O valor total em reais de ",litros,"litros é de R$",total,".")

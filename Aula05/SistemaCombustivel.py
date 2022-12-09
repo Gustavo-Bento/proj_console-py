@@ -32,6 +32,9 @@ class abastecer:
     def case_3(self):
         aditivada(opcao)
 
+    def case_4(self):
+        s500(opcao)
+
 posto=[]
 x=0
 
